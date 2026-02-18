@@ -1,3 +1,7 @@
+# This script works with CSV exported from Defender - Weakness tab
+# It gives you a proper count of Microsoft, non-Microsoft, multi-browsers and single solution, when they are high or critical
+# It is useful to report executive level VM to your board
+
 import csv
 
 RELATED_SW_FIELD = 'Related Software'
