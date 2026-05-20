@@ -1,3 +1,9 @@
+# This script - version 3 - works with CSV exported from Defender - Weakness tab
+# It gives you a proper count of vulnerabilities from DEFENDER Weakness tab, grouping by 1 - Microsoft desktops + servers, 2 - multi-browsers and 3 - others (OpenSSL, 7ZIP, etc.), when they are high or critical
+# It is useful to report executive level VM to your board
+# The result is displayed in CMD and also in 2 CSV files. One is the summary, same as displayed in CMD. The other CSV is the list of CVEs by each category (above groups)
+# To use this script, go to CMD and: C:\Temp>python parse_critical_and_high_vulns_with_cve_category_Version3.py "20260310 export-tvm-vulnerabilities_critical.csv"
+
 import csv
 
 RELATED_SW_FIELD = 'Related Software'
